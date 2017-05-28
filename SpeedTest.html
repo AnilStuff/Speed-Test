@@ -1,0 +1,131 @@
+<!DOCTYPE = html>
+
+<html lang="en-US">
+<head>
+<meta charset = "UTF-8"> <title>Testing</title>
+<script src="Evaluation.js" async></script>
+
+<style type = "text/css">
+
+nav{
+  text-align: center;
+  font-size: 38px;
+  font: "Arial";
+  background-color: #ffffff;
+  width: 100%;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #737373;
+  border-bottom: 1px black dashed;
+  border-left:  1px black solid;
+  border-right:  1px black solid;
+  border-top:  1px black solid;
+
+}
+
+#leftCharacters{
+  float : right;
+  text-align: right;
+  font-size: 12px;
+  font: "Arial";
+  vertical-align: middle;
+  color: #666666;
+
+}
+
+/*.center{
+width: 40%;
+margin: 0 auto;
+display: block;
+border-left:  1px black solid;
+border-right:  1px black solid;
+}*/
+.center{
+width: 80%;
+margin: 0 auto;
+display: block;
+border-left:  1px black solid;
+border-right:  1px black solid;
+}
+
+#info{
+  text-align: center;
+  font-size: 18px;
+  font: "Arial";
+  color: #737373;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px black dashed;
+
+}
+
+#inputText{
+  text-align: center;
+  font-size: 18px;
+  font: "Arial";
+  color: #737373;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#userEnteredText{
+  text-align: left;
+  background-color: white;
+  vertical-align: middle;
+  border-color: green;
+  border-width: 2px;
+  /*margin-top: 10px;*/
+}
+
+.startOver{
+   color : #666666;
+  width: 100px;
+  height: 44px;
+  box-shadow: 2px 2px 2px gray;
+  border-radius: 2px;
+  margin-top: 10px;
+  font: 16px "Arial" ;
+}
+
+#right{
+  float: right;
+  margin-right: 15px;
+}
+
+
+.timeTaken{
+  float: left;
+  text-align: left;
+  background-color: white;
+  vertical-align: middle;
+  /*margin-top: 20px;*/
+  font: 32px "Arial" ;
+  margin-left: 20px;
+}
+
+</style>
+</head>
+
+<body>
+  <nav class="center">
+    Typing speed testing application
+  </nav>
+  <div id = "info" class="center">
+    This is a simple typing speed test application. <br>The text on the below box needs to be written inside the box. <br> Please use the "Start Over" button to start the test.
+  </div>
+  <div id = "inputText" class="center">JavaScript, often abbreviated as "JS", is a high-level, dynamic, untyped, and interpreted run-time language.</div>
+  <div class="center">
+    <textarea rows="10" cols="50" placeholder="Please start typing in this box" id = "userEnteredText" class="center"></textarea>
+    <div class="center">
+      <div id = "leftCharacters">characters Left</div>
+      <div class = "timeTaken"> 00:00:00</div>
+      <div id = "right"> <button class="startOver">Start Over</button></div>
+    </div>
+  </div>
+
+
+</body>
+</html>
